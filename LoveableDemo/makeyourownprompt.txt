@@ -1,0 +1,27 @@
+# How will you make your own prompt
+
+Ask Claude or ChatGPT (AI of your choice!)
+
+
+'''
+You are tasked with writing a highly detailed prompt for Loveable, an AI tool that generates full web applications from scratch.
+
+Requirements for your output:
+- The prompt should describe a website or web app with <x,y,z> features that I provide.
+- For each feature, break down the user interactions, data flow, UI components, and error handling in detail.
+- Always include:
+  - Frontend technologies (React + TailwindCSS)
+  - Styling guidelines (colors, typography, spacing, rounded corners, shadows, etc.)
+  - Accessibility requirements (ARIA labels, keyboard navigation)
+  - Extra flourishes (animations, responsiveness, search, dark mode toggle, etc.)
+- End with explicit instructions about the final deliverable (a complete working React app, modular code, comments).
+
+Do not generate code — only produce the **Loveable prompt** in text form.
+'''
+
+
+Replace <x,y,z> with the topic of your choice
+Then, copy paste the prompt into Loveable!!!
+
+Again, vibe coding to the max! (did you write any code?)
+- Maybe philosophically English is a programming language....
