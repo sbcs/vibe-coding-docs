@@ -1,0 +1,58 @@
+# Example Prompts
+
+The following prompts are in code format for python. 
+
+The firecrawl website runs the code in the background so we don't have to worry about writing code - ULTIMATE VIBE!
+
+Just copy the URL and prompt firecrawl with the prompt.
+
+1. E-commerce Product Catalog
+'''
+pythonurls = ["https://store.steampowered.com/search/?category1=998"]
+prompt = "Extract all video games with their titles, prices, release dates, genres, and user ratings into a structured list"
+'''
+2. Job Listings Aggregation
+'''
+pythonurls = ["https://jobs.lever.co/anthropic"]
+prompt = "Extract all job openings with position titles, departments, locations, experience requirements, and application links"
+'''
+3. News Article Analysis
+'''
+pythonurls = ["https://techcrunch.com/category/artificial-intelligence/"]
+prompt = "Extract recent AI news articles with headlines, publication dates, author names, key points, and company mentions"
+'''
+4. Company Directory
+```python
+pythonurls = ["https://www.ycombinator.com/companies"]
+prompt = "Extract startup company profiles including company names, descriptions, founding year, batch, founder names, and website URLs"
+```
+5. Event Information
+```
+pythonurls = ["https://lu.ma/sf"]
+prompt = "Extract upcoming events with titles, dates, times, locations, organizers, ticket prices, and event descriptions"
+```
+6. Research Papers/Documentation
+```python
+pythonurls = ["https://arxiv.org/list/cs.AI/recent"]
+prompt = "Extract recent AI research papers with titles, authors, abstracts, submission dates, and PDF links"
+```
+7. Real Estate Listings
+```
+pythonurls = ["https://www.zillow.com/san-francisco-ca/"]
+prompt = "Extract property listings with addresses, prices, bedrooms, bathrooms, square footage, and listing details"
+```
+8. Restaurant/Business Reviews
+```
+pythonurls = ["https://www.yelp.com/sf"]
+prompt = "Extract restaurant information including names, cuisines, ratings, price ranges, addresses, and recent review snippets"
+```
+9. Social Media Posts
+```
+pythonurls = ["https://news.ycombinator.com/"]
+prompt = "Extract top posts with titles, points, comment counts, authors, and discussion topics"
+```
+10. Product Comparisons
+```
+pythonurls = ["https://www.gsmarena.com/makers.php3"]
+prompt = "Extract smartphone specifications including model names, prices, screen sizes, camera specs, battery life, and key features"
+```
