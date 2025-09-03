@@ -3,7 +3,7 @@ This is the github repo for additional and supplemental materials from the vibe 
 
 ## General Resources
 [Slides](
-website: sbcs.io
+[website](sbcs.io)
 
 ## Demos
 ### First Demo - Loveable
