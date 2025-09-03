@@ -1,0 +1,86 @@
+Prompt for Claude Code:
+
+  I want to add a complete blog functionality to my React portfolio website. The current
+  Blog.tsx page shows "Under Construction" and I need to transform it into a fully functional
+  blog system. Here are the specific requirements:
+
+  Overall Architecture:
+  1. Create a blog system that displays a list of blog posts on the main blog page (/blog) and
+   individual blog post pages (/blog/:id)
+  2. Use a JSON file to store blog post metadata and separate .txt files for the actual blog
+  content
+  3. Implement basic markdown rendering for blog posts (headers, paragraphs, links)
+  4. Add proper routing to support individual blog post URLs
+
+  Specific Implementation Requirements:
+
+  Step 1: Create the blog data structure
+  - Create src/data/blog/posts.json with the following structure for blog posts:
+    - id: string identifier for URL routing
+    - title: blog post title
+    - description: short description for the blog listing
+    - date: publication date in YYYY-MM-DD format
+    - content: full markdown content of the blog post
+  - Create src/data/blog/post1.txt containing a blog post titled "Poker - An Infrastructure
+  for Life" with content about poker, decision-making, risk management, and life lessons. The
+  content should include:
+    - Main heading with #
+    - Numbered sections (1. Nondeterministic Game, 2. Decisions, 3. Culture, 4. Fear)
+    - Markdown links to external resources
+    - Personal anecdotes about poker and board games
+    - Philosophical reflections on decision-making and risk
+
+  Step 2: Transform the Blog listing page
+  - Update src/pages/Blog.tsx to:
+    - Import and use the posts data from src/data/blog/posts.json
+    - Display each blog post as a clickable card showing title, date, and description
+    - Style the cards with borders, padding, and hover effects using inline styles
+    - Make each card a clickable link to the individual blog post page (/blog/${post.id})
+    - Center the content with a maximum width of 800px
+    - Remove the "Under Construction" placeholder content
+
+  Step 3: Create individual blog post page
+  - Create a new file src/pages/BlogPost.tsx that:
+    - Uses React Router's useParams to get the blog post ID from the URL
+    - Fetches the corresponding blog post data from the posts.json file
+    - Implements a custom markdown renderer that handles:
+        - Headers (# ## ###) with appropriate font sizes and margins
+      - Regular paragraphs with proper line height and spacing
+      - Markdown links with proper styling and external link behavior
+      - Numbered list items with bold formatting
+      - Empty lines as line breaks
+    - Includes a "Back to Blog" navigation link
+    - Displays the post title, date, and rendered content
+    - Handles cases where blog post is not found
+    - Uses inline styling for all components to match the existing site style
+
+  Step 4: Update routing
+  - Modify src/App.js to:
+    - Import the new BlogPost component
+    - Add a new route for /blog/:id that renders the BlogPost component
+    - Ensure the route is placed after the main /blog route
+
+  Technical Requirements:
+  - Use TypeScript for the new BlogPost component with proper typing for useParams
+  - Follow the existing code style and patterns used in other pages
+  - Use inline styles to match the current styling approach used throughout the site
+  - Ensure responsive design considerations
+  - Make sure all imports use the correct relative paths
+  - Handle edge cases like missing blog posts gracefully
+
+  Testing:
+  After implementation, verify that:
+  - The blog listing page displays the blog post cards correctly
+  - Clicking a blog post navigates to the individual post page
+  - The markdown content renders with proper formatting
+  - The back navigation works correctly
+  - URLs like /blog/post1 load the correct content
+
+  Please implement this blog functionality step by step, creating the necessary commits for
+  each major milestone (data structure setup, blog listing transformation, individual post
+  page creation, and routing updates).
+
+  ---
+  This prompt provides all the specific details needed to recreate the exact blog
+  functionality you implemented, including the content structure, styling approach, and
+  technical implementation details.
