@@ -2,7 +2,8 @@
 This is the github repo for additional and supplemental materials from the vibe coding workshop.
 
 ## General Resources
-[Slides](
+[Slides]()
+
 [website](sbcs.io)
 
 ## Demos
