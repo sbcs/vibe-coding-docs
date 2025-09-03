@@ -1,0 +1,47 @@
+"Build a fully interactive web application for visualizing and managing teams in a company. The app should display each manager as a large circle placed inside a rectangular container (the rectangle represents the manager’s group). Inside each rectangle, show the workers as smaller circles arranged neatly around the manager’s circle.
+
+I want the following functionality:
+
+Drag and Drop:
+
+Workers should be draggable between rectangles to reassign them to different managers.
+
+When a worker is dropped into a new group, the UI should automatically update to show them inside the new manager’s rectangle.
+
+Include smooth animations so the movement feels fluid and intuitive.
+
+Merging Managers:
+
+Allow two manager rectangles to be merged by dragging one rectangle onto another.
+
+When merged, their rectangles combine into a single larger rectangle containing both managers and all of their workers.
+
+The layout should re-balance automatically to prevent overlap and maintain clarity.
+
+Dynamic Updates:
+
+As workers are moved or groups are merged, the display should update in real-time.
+
+Ensure transitions (adding/removing/merging) have subtle animations for polish.
+
+UI and Styling:
+
+Use a clean, modern interface with a white/light gray background, soft shadows, and rounded corners.
+
+Worker circles should be smaller but distinct, with hover tooltips showing their name.
+
+Manager circles should be larger and labeled with the manager’s name at the center.
+
+Rectangles should resize automatically to fit their contents.
+
+Important: Use Stony Brook University’s colors as the theme — primary Red (#990000) and Black (#000000), with white as a neutral background.
+
+Extra Features (if possible):
+
+Add a search bar at the top to quickly find a worker and highlight the group they belong to.
+
+Provide a button to “add new manager” (creates a new rectangle + circle) and “add new worker” (adds a worker circle into a group).
+
+Include a reset button that returns all workers and managers to the initial state.
+
+The final app should feel smooth, professional, and user-friendly, optimized for both desktop and tablet use."
